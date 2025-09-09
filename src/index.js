@@ -24,7 +24,7 @@ app.get('*', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/smart-email-verifier';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://saitajeswivzm_db_user:7YlYIgYRHDrPZHMR@cluster0.6yzzswi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
