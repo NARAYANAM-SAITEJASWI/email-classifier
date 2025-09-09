@@ -29,10 +29,9 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/smart-
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB');
-    app.listen(PORT, () => console.log('Server running on port', PORT));
+    app.listen(PORT, "0.0.0.0", () => console.log(`Server running on ${PORT}`));
   })
   .catch(err => {
     console.error('MongoDB connection error:', err.message);
-    // start server anyway (for demo without DB)
-    app.listen(PORT, () => console.log('Server running (without DB) on port', PORT));
+    app.listen(PORT, "0.0.0.0", () => console.log(`Server running (without DB) on ${PORT}`));
   });
