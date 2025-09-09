@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: smart-email-verifier
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        fromDatabase:
+          name: smart-email-verifier-db
+          property: connectionString
+    healthCheckPath: /api/analytics
+
+databases:
+  - name: smart-email-verifier-db
+    plan: free

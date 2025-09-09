@@ -1,0 +1,33 @@
+{
+  "name": "smart-email-verifier",
+  "version": "1.0.0",
+  "description": "Mini Email Verification & Analytics API (Express + MongoDB)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "echo 'No build step required for this project'",
+    "heroku-postbuild": "echo 'No build step required for this project'",
+    "deploy": "node deploy.js"
+  },
+  "keywords": [
+    "email",
+    "verify",
+    "analytics",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "email-validator": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
