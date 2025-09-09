@@ -1,5 +1,5 @@
 // API Configuration
-const API_BASE_URL = 'https://email-classifier-1-1zcp.onrender.com';
+const API_BASE_URL = 'https://email-classifier-1-1zcp.onrender.com/api';
 
 // DOM Elements
 const tabButtons = document.querySelectorAll('.tab-button');
