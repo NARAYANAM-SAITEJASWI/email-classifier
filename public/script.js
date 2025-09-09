@@ -1,5 +1,5 @@
 // API Configuration
-const API_BASE_URL = 'http://localhost:3000/api';
+const API_BASE_URL = 'https://email-classifier-1-1zcp.onrender.com';
 
 // DOM Elements
 const tabButtons = document.querySelectorAll('.tab-button');
